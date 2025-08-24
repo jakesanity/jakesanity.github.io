@@ -1,9 +1,399 @@
-<h1><center>Portfolio</center></h1>
-<h1><center>About Me</center></h1>
-<p><center>Im a Second Year BSIT Student and I like coding</center></p>
-<h1><center>Favorites</center></h1>
-<p2><center>Coding, Games</center></p2>
-<h1><center>School Projects</center></h1>
-<p1><center>None So Far</center></p1>
-<h1><center>Talents</center></h1>
-<p1><center>Editing</center></p1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">Portfolio</a>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Aldwin James Bucio</span>
+          </h1>
+          <div class="typing-container">
+            <span class="typing-text" id="typed-text"></span>
+            <span class="cursor" id="cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Just coding for fun xdxd
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i>
+              View My Work
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <div class="profile-image">
+              <img src="/assets/hero.jpg" alt="Profile">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <div class="glass-card">
+              <h3>For the Vibes</h3>
+              <p>
+                I specialize in creating 
+                innovative digital solutions that bridge the gap between functionality and aesthetics. 
+                My journey began with a curiosity about how things work, and has evolved into a 
+                passion for building products that truly matter.
+              </p>
+              <p>
+                I believe in clean code, user-centered design, and the power of collaboration. 
+                When I'm not coding, you'll find me exploring new technologies, contributing to 
+                open source projects, or sharing knowledge with the developer community.
+              </p>
+              <div class="stats">
+                <div class="stat-item">
+                  <span class="stat-number" data-count="10">0</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-count="0 :(">0</span>
+                  <span class="stat-label">Clients</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-count="3">0</span>
+                  <span class="stat-label">Years</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="experience-timeline">
+            <h3>Experience Timeline</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4> Frontend Developer</h4>
+                  <span class="timeline-date">2023 - Present</span>
+                  <p>God I love designing.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Web Developer</h4>
+                  <span class="timeline-date">2024 - 2025</span>
+                  <p>Developed end-to-end web applications using modern tech stacks because I have to, to pass my class :/</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Junior Developer</h4>
+                  <span class="timeline-date">2023 - 2025</span>
+                  <p>Started my professional journey building responsive web interfaces.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-content">
+          <div class="skills-showcase">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <h3>JavaScript</h3>
+              <p>Modern ES6+ development with advanced concepts</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h3>React</h3>
+              <p>Component-based UI development and state management</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-node-js"></i>
+              </div>
+              <h3>Node.js</h3>
+              <p>Server-side JavaScript and API development</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <h3>Python</h3>
+              <p>Backend development and data processing</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <h3>CSS3</h3>
+              <p>Modern styling with animations and responsive design</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h3>HTML5</h3>
+              <p>Semantic markup and modern web standards</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <h3>Git</h3>
+              <p>Version control and collaborative development</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-docker"></i>
+              </div>
+              <h3>Docker</h3>
+              <p>Containerization and deployment solutions</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-aws"></i>
+              </div>
+              <h3>AWS</h3>
+              <p>Cloud infrastructure and serverless architecture</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-figma"></i>
+              </div>
+              <h3>Figma</h3>
+              <p>UI/UX design and prototyping</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>MongoDB</h3>
+              <p>NoSQL database design and optimization</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>TypeScript</h3>
+              <p>Type-safe JavaScript development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-Commerce Platform">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <button class="project-btn" onclick="openModal('project1')">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                  <a href="#" class="project-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-btn">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Nothing to show yet, tired of searching for  my projects</h3>
+              <p></p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Task Management App">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <button class="project-btn" onclick="openModal('project2')">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                  <a href="#" class="project-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-btn">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Nothing to show yet, tired of searching for  my projects</h3>
+              <p></p>
+              <div class="project-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">PWA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Analytics Dashboard">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <button class="project-btn" onclick="openModal('project3')">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                  <a href="#" class="project-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-btn">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Nothing to show yet, tired of searching for  my projects</h3>
+              <p></p>
+              <div class="project-tech">
+                <span class="tech-tag">D3.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Project Modals -->
+    <div class="modal" id="project1">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('project1')">&times;</span>
+        <h3>E-Commerce Platform</h3>
+        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-Commerce Platform">
+        <p>A comprehensive e-commerce solution featuring user authentication, product catalog, shopping cart, and secure payment processing. Built with modern technologies for optimal performance and user experience.</p>
+        <div class="modal-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">Stripe</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="project2">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('project2')">&times;</span>
+        <h3>Task Management App</h3>
+        <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Task Management App">
+        <p>A collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface. Includes progressive web app capabilities for mobile usage.</p>
+        <div class="modal-tech">
+          <span class="tech-tag">Vue.js</span>
+          <span class="tech-tag">Firebase</span>
+          <span class="tech-tag">PWA</span>
+          <span class="tech-tag">WebSocket</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="project3">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('project3')">&times;</span>
+        <h3>Data Analytics Dashboard</h3>
+        <img src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Analytics Dashboard">
+        <p>An interactive data visualization dashboard featuring advanced charts, real-time analytics, and comprehensive reporting tools. Designed for business intelligence and data-driven decision making.</p>
+        <div class="modal-tech">
+          <span class="tech-tag">D3.js</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">FastAPI</span>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
